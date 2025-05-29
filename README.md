@@ -6,7 +6,6 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/KellyTall/wesandersoncast/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/KellyTall/wesandersoncast/actions/workflows/R-CMD-check.yaml)
-
 [![License:
 CC0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 <!-- badges: end -->
