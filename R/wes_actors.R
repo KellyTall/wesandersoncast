@@ -4,15 +4,15 @@
 #'
 #' @format A tibble with 5 variables:
 #' \describe{
-#'   \item{film_label}{Film title}
-#'   \item{actor_label}{Actor name}
-#'   \item{release_date}{Date of first screening}
-#'   \item{duration}{Duration of the film in hh:mm:ss}
+#'   \item{film}{Film title}
+#'   \item{actor}{Actor name}
+#'   \item{release}{Date of first screening}
 #'   \item{box_office_usd}{Worldwide box office takings in USD}
+#'   \item{duration_period}{Duration of the film in hh:mm:ss}
 #' }
 #' @source Wikidata. Query via \href{https://www.wikidata.org}{Wikidata}
 #'
 #' @examples
 #' # Show most frequent actors
-#' dplyr::count(wes_actors, actor_label, sort = TRUE)
+#' dplyr::count(wes_actors, actor, sort = TRUE)
 "wes_actors"

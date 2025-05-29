@@ -41,7 +41,10 @@ wes_actors <- results |>
   mutate(duration_seconds = as.numeric(duration) * 60,
          duration_period = seconds_to_period(duration_seconds)
   ) |>
-  select(-duration, -duration_seconds)
+  select(-duration, -duration_seconds) |> 
+  rename(film = film_label,
+         actor=actor_label,
+         box_office_usd = box_office)
 
 
 usethis::use_data(wes_actors, overwrite = TRUE)

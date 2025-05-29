@@ -1,15 +1,21 @@
 Package: wesandersoncast
-Title: What the Package Does (One Line, Title Case)
+Title: Cast List from Wes Anderson Films
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Kelly", "Tall", , "kelly@hellomister.com.au", role = c("aut", "cre"))
+Description: A dataset of actors appearing in films directed by Wes
+    Anderson.  Includes film title, actor name, release year, runtime in
+    minutes, and worldwide box office takings in USD.
 License: CC0
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
 Depends: 
     R (>= 3.5)
+Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
 Imports: 
-    dplyr
+    dplyr,
+    janitor,
+    lubridate,
+    readr,
+    WikidataQueryServiceR
