@@ -21,7 +21,7 @@ Wikidata. Query via \url{https://www.wikidata.org}
 wes_actors
 }
 \description{
-A dataset of actors appearing in films directed by Wes Anderson. Includes film title, actor name, release date, duration, and worldwide box office takings.
+A dataset of actors appearing in films directed by Wes Anderson. Includes film title, actor name, release year, runtime in minutes, and worldwide box office takings.
 }
 \examples{
 dplyr::count(wes_actors, actor, sort = TRUE)

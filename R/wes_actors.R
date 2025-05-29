@@ -1,6 +1,6 @@
 #' Cast List from Wes Anderson Films
 #'
-#' A dataset of actors appearing in films directed by Wes Anderson. Includes film title, actor name, release date, duration, and worldwide box office takings.
+#' A dataset of actors appearing in films directed by Wes Anderson. Includes film title, actor name, release year, runtime in minutes, and worldwide box office takings.
 #'
 #' @format A tibble with 5 variables:
 #' \describe{
