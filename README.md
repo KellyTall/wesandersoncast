@@ -13,7 +13,8 @@ CC0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](https://crea
 **wesandersoncast** is a lightweight R package that provides a tidy
 dataset of actors appearing in films directed by **Wes Anderson**. It
 includes each film’s title, release year, runtime, and worldwide box
-office takings — all sourced from [Wikidata](https://www.wikidata.org/).
+office takings — all sourced from
+[Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page).
 
 The dataset is ideal for demonstrations, tutorials, and exploration of
 network relationships or filmography trends using the tidyverse.

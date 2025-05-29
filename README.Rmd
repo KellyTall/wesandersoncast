@@ -8,7 +8,7 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "man/figures/README-",
+  fig.path = "README-figures/",
   out.width = "100%"
 )
 ```
@@ -74,4 +74,5 @@ devtools::load_all()
 ```{r example-usage, eval = TRUE, echo = TRUE}
 library(wesandersoncast)
 head(wes_actors)
+
 ```

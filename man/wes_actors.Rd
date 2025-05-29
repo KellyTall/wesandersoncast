@@ -26,5 +26,6 @@ Includes film title, actor name, release date, runtime, and worldwide box office
 }
 \examples{
 dplyr::count(wes_actors, actor, sort = TRUE)
+lubridate::is.period(wes_actors$duration_period)
 }
 \keyword{datasets}

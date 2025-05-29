@@ -11,20 +11,15 @@ License: CC0
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Depends: 
     R (>= 3.5)
 Imports: 
+    lubridate,
+    dplyr
 Suggests: 
-    dplyr,
     janitor,
     readr,
-    WikidataQueryServiceR,
-    lubridate
+    WikidataQueryServiceR
 URL: https://www.hellomister.com.au/wesandersoncast/
 BugReports: https://github.com/KellyTall/wesandersoncast/issues
-BuildIgnore: 
-    ^README\\.Rmd$,
-    ^LICENSE\\.md$,
-    ^data-raw$
-

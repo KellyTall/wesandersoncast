@@ -12,6 +12,9 @@
 #'   \item{duration_period}{Duration of the film in hours and minutes}
 #' }
 #' @source \href{https://www.wikidata.org/wiki/Wikidata:Main_Page}{Wikidata}
+#' @importFrom dplyr count
+#' @importFrom lubridate is.period
 #' @examples
 #' dplyr::count(wes_actors, actor, sort = TRUE)
+#' lubridate::is.period(wes_actors$duration_period)
 "wes_actors"
