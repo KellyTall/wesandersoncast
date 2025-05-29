@@ -44,7 +44,7 @@ The `wes_actors` dataset is a tibble with 353 rows and 5 variables:
 
 If you find any errors in the data, I encourage you to correct them on Wikidata — it’s an incredible community-driven resource.
 
-## 📜 License
+## 📜 License 
 
 The dataset included in this package is dedicated to the public domain under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
 
