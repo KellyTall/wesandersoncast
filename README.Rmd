@@ -26,8 +26,6 @@ The dataset is ideal for demonstrations, tutorials, and exploration of network r
 
 ## 📦 Dataset contents
 
-The `wes_actors` dataset is a tibble with the following columns:
-
 The `wes_actors` dataset is a tibble with 353 rows and 5 variables:
 
 | Column           | Type     | Description                                                |
