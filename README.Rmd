@@ -69,7 +69,7 @@ devtools::install()
 devtools::load_all()
 ```
 
-```r
+```{r example-usage, eval = TRUE, echo = TRUE}
 library(wesandersoncast)
 head(wes_actors)
 ```

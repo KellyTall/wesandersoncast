@@ -70,4 +70,14 @@ devtools::install()
 ``` r
 library(wesandersoncast)
 head(wes_actors)
+#> # A tibble: 6 × 5
+#> # Groups:   film, actor [6]
+#>   film          actor                release_date box_office_usd duration_period
+#>   <chr>         <chr>                <date>                <dbl> <Period>       
+#> 1 Asteroid City Aaron Ziobrowski     2023-05-23         53857743 1H 45M 0S      
+#> 2 Asteroid City Adrien Brody         2023-05-23         53857743 1H 45M 0S      
+#> 3 Asteroid City Adrián Corpa Fernán… 2023-05-23         53857743 1H 45M 0S      
+#> 4 Asteroid City Aimee Mullins        2023-05-23         53857743 1H 45M 0S      
+#> 5 Asteroid City Ainhoa Aldanondo     2023-05-23         53857743 1H 45M 0S      
+#> 6 Asteroid City Alejandro García Ap… 2023-05-23         53857743 1H 45M 0S
 ```
