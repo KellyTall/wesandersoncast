@@ -34,11 +34,13 @@ The `wes_actors` dataset is a tibble with 353 rows and 5 variables:
 
 ## Data Notes
 
-*“Castello Cavalcanti”, “Cousin Ben Troop Screening with Jason
+* “Castello Cavalcanti”, “Cousin Ben Troop Screening with Jason
 Schwartzman”, “Hotel Chevalier”, and short versions of “Bottle Rocket”
-are not included.* ”The Wonderful Story of Henry Sugar”, “The Rat
+are not included.
+* ”The Wonderful Story of Henry Sugar”, “The Rat
 Catcher”, and “The Swan” have no Box Office results as they were
-produced by Netflix. \*“The Phoenician Scheme” was released in May 2025,
+produced by Netflix. 
+* “The Phoenician Scheme” was released in May 2025,
 and at the time of publishing this to CRAN, there were no Box Office
 figures available. I will update once this info is available.
 
