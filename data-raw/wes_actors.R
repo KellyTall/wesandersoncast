@@ -32,7 +32,7 @@ wes_actors <- results |>
   clean_names() |>
   filter(!film_label %in% c("Castello Cavalcanti", "Cousin Ben Troop Screening with Jason Schwartzman", "Hotel Chevalier")) |> ##removing shorts / promos
   filter(duration != "13") |> # filters out short film versions of bottle rocket
-  mutate(release_date = ymd(release_date)) |>
+  mutate(release_date = lubridate::ymd(release_date)) |>
   mutate(actor_label = case_when(actor_label == "Q1333118" ~ "Richard Ayoade",
                                  TRUE ~ actor_label)) |>
   group_by(film_label, actor_label) |>
@@ -41,7 +41,7 @@ wes_actors <- results |>
   mutate(duration_seconds = as.numeric(duration) * 60,
          duration_period = seconds_to_period(duration_seconds)
   ) |>
-  select(-duration, -duration_seconds) |> 
+  select(-duration, -duration_seconds) |>
   rename(film = film_label,
          actor=actor_label,
          box_office_usd = box_office)

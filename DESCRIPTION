@@ -1,22 +1,30 @@
 Package: wesandersoncast
 Title: Cast List from Wes Anderson Films
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
-    person("Kelly", "Tall", , "kelly@hellomister.com.au", role = c("aut", "cre"))
-Description: A dataset of actors appearing in films directed by Wes
-    Anderson.  Includes film title, actor name, release year, runtime in
-    minutes, and worldwide box office takings in USD.
+    person("Kelly", "Tall", email = "kelly@hellomister.com.au", role = c("aut", "cre"))
+Description: A dataset of actors appearing in films directed by Wes Anderson. 
+    Includes film title, actor name, release year, runtime in minutes, 
+    and worldwide box office takings in USD. Suitable for use in data 
+    exploration, visualisation, or teaching tidyverse workflows.
 License: CC0
-Depends: 
-    R (>= 3.5)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
+Depends: 
+    R (>= 3.5)
 Imports: 
+Suggests: 
     dplyr,
     janitor,
-    lubridate,
     readr,
-    WikidataQueryServiceR
-URL: http://www.hellomister.com.au/wesandersoncast/
+    WikidataQueryServiceR,
+    lubridate
+URL: https://www.hellomister.com.au/wesandersoncast/
+BugReports: https://github.com/KellyTall/wesandersoncast/issues
+BuildIgnore: 
+    ^README\\.Rmd$,
+    ^LICENSE\\.md$,
+    ^data-raw$
+
