@@ -49,6 +49,8 @@ Wikidata — it’s an incredible community-driven resource.
 The dataset included in this package is dedicated to the public domain
 under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
 
+(We love creative commons)
+
 ## 📥 Installation
 
 You can install the development version of **wesandersoncast** from
