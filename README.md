@@ -6,6 +6,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/KellyTall/wesandersoncast/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/KellyTall/wesandersoncast/actions/workflows/R-CMD-check.yaml)
+
 [![License:
 CC0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 <!-- badges: end -->
@@ -20,8 +21,6 @@ network relationships or filmography trends using the tidyverse.
 
 ## 📦 Dataset contents
 
-The `wes_actors` dataset is a tibble with the following columns:
-
 The `wes_actors` dataset is a tibble with 353 rows and 5 variables:
 
 | Column | Type | Description |
@@ -34,15 +33,14 @@ The `wes_actors` dataset is a tibble with 353 rows and 5 variables:
 
 ## Data Notes
 
-* “Castello Cavalcanti”, “Cousin Ben Troop Screening with Jason
-Schwartzman”, “Hotel Chevalier”, and short versions of “Bottle Rocket”
-are not included.
-* ”The Wonderful Story of Henry Sugar”, “The Rat
-Catcher”, and “The Swan” have no Box Office results as they were
-produced by Netflix. 
-* “The Phoenician Scheme” was released in May 2025,
-and at the time of publishing this to CRAN, there were no Box Office
-figures available. I will update once this info is available.
+- “Castello Cavalcanti”, “Cousin Ben Troop Screening with Jason
+  Schwartzman”, “Hotel Chevalier”, and short versions of “Bottle Rocket”
+  are not included.
+- “The Wonderful Story of Henry Sugar”, “The Rat Catcher”, and “The
+  Swan” have no Box Office results as they were produced by Netflix.
+- “The Phoenician Scheme” was released in May 2025, and at the time of
+  publishing this to CRAN, there were no Box Office figures available. I
+  will update once this info is available. is this right?
 
 If you find any errors in the data, I encourage you to correct them on
 Wikidata. It’s an incredible resource that relies on input by people
@@ -69,22 +67,12 @@ devtools::install()
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(wesandersoncast)
-## basic example code
+devtools::load_all()
+#> ℹ Loading wesandersoncast
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+## basic example code
 ```
 
 You’ll still need to render `README.Rmd` regularly, to keep `README.md`
