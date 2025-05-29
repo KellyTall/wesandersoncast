@@ -10,10 +10,10 @@
 CC0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 <!-- badges: end -->
 
-A lightweight R package that provides a tidy dataset of actors appearing
-in films directed by **Wes Anderson**, including the year of release,
-duration in minutes, and worldwide box office takings — all sourced from
-[Wikidata](https://www.wikidata.org/).
+**wesandersoncast** is a lightweight R package that provides a tidy
+dataset of actors appearing in films directed by **Wes Anderson**. It
+includes each film’s title, release year, runtime, and worldwide box
+office takings — all sourced from [Wikidata](https://www.wikidata.org/).
 
 The dataset is ideal for demonstrations, tutorials, and exploration of
 network relationships or filmography trends using the tidyverse.
@@ -30,56 +30,44 @@ The `wes_actors` dataset is a tibble with 353 rows and 5 variables:
 | `box_office_usd` | numeric | Worldwide box office gross (in USD, where available) |
 | `duration_period` | lubridate Period | Duration of the film in hours and minutes (e.g. “1H 45M”) |
 
-## Data Notes
+## 📝 Data Notes
 
 - “Castello Cavalcanti”, “Cousin Ben Troop Screening with Jason
-  Schwartzman”, “Hotel Chevalier”, and short versions of “Bottle Rocket”
-  are not included.
+  Schwartzman”, “Hotel Chevalier”, and the short version of “Bottle
+  Rocket” are not included.
 - “The Wonderful Story of Henry Sugar”, “The Rat Catcher”, and “The
-  Swan” have no Box Office results as they were produced by Netflix.
-- “The Phoenician Scheme” was released in May 2025, and at the time of
-  publishing this to CRAN, there were no Box Office figures available. I
-  will update once this info is available. is this right?
+  Swan” have no box office results as they were produced by Netflix.
+- “The Phoenician Scheme” was released in May 2025. At the time of
+  publishing to CRAN, no box office figures were available. This will be
+  updated once the data is released.
 
 If you find any errors in the data, I encourage you to correct them on
-Wikidata. It’s an incredible resource that relies on input by people
-like you.
+Wikidata — it’s an incredible community-driven resource.
 
-## License
+## 📜 License
 
 The dataset included in this package is dedicated to the public domain
 under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
 
-## Installation
+## 📥 Installation
 
-You can install the development version of wesandersoncast like so:
+You can install the development version of **wesandersoncast** from
+GitHub with:
 
 ``` r
-# If on GitHub:
-# remotes::install_github("yourusername/wesandersoncast")
+# install.packages("remotes") # if not already installed
+remotes::install_github("KellyTall/wesandersoncast")
+```
 
-# Or install from local source (if not yet on CRAN):
+Or install it from local source (if not yet on CRAN):
+
+``` r
 devtools::install()
-## Example
 ```
 
-This is a basic example which shows you how to solve a common problem:
+## 🔍 Example
 
 ``` r
-devtools::load_all()
-#> ℹ Loading wesandersoncast
+library(wesandersoncast)
+head(wes_actors)
 ```
-
-``` r
-## basic example code
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
