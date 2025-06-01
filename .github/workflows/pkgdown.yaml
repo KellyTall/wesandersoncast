@@ -39,6 +39,8 @@ jobs:
             any::pkgdown
             any::devtools
             any::wesanderson
+            any::tidyverse
+            any::ggplot2
             local::.
           needs: website
 
