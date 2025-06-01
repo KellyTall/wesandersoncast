@@ -39,9 +39,15 @@ jobs:
             any::pkgdown
             any::devtools
             any::wesanderson
-            any::tidyverse
             any::ggplot2
+            any::dplyr
             any::forcats
+            any::usethis
+            any::httr2
+            any::ragg
+            any::rcmdcheck
+            any::rversions
+            any::urlchecker
             local::.
           needs: website
 
