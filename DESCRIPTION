@@ -22,7 +22,10 @@ Suggests:
     knitr,
     readr,
     rmarkdown,
-    WikidataQueryServiceR
+    WikidataQueryServiceR,
+    wesanderson, 
+    ggplot2,
+    tidyverse
 URL: https://www.hellomister.com.au/wesandersoncast/
 BugReports: https://github.com/KellyTall/wesandersoncast/issues
 VignetteBuilder: knitr

@@ -41,6 +41,7 @@ jobs:
             any::wesanderson
             any::tidyverse
             any::ggplot2
+            any::forcats
             local::.
           needs: website
 

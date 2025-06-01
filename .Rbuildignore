@@ -11,3 +11,5 @@
 ^dev$
 ^man/figures$
 ^README-figures$
+^doc$
+^Meta$
