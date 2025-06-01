@@ -48,7 +48,8 @@ wes_actors <- results |>
   rename(film = film_label,
          actor=actor_label,
          box_office_usd = box_office)
-View(wes_actors)
+
+# View(wes_actors)
 
 usethis::use_data(wes_actors, overwrite = TRUE)
 
