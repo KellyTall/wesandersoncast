@@ -1,6 +1,6 @@
 Package: wesandersoncast
 Title: Cast List from Wes Anderson Films
-Version: 0.1.0
+Version: 0.1.0.9001
 Authors@R: 
     person("Kelly", "Tall", email = "kelly@hellomister.com.au", role = c("aut", "cre"))
 Description: A dataset of actors appearing in films directed by Wes Anderson. 
