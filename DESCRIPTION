@@ -19,7 +19,10 @@ Imports:
     dplyr
 Suggests: 
     janitor,
+    knitr,
     readr,
+    rmarkdown,
     WikidataQueryServiceR
 URL: https://www.hellomister.com.au/wesandersoncast/
 BugReports: https://github.com/KellyTall/wesandersoncast/issues
+VignetteBuilder: knitr
