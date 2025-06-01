@@ -32,6 +32,7 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
+<li class="nav-item"><a class="nav-link" href="news/index.html">Changelog</a></li>
       </ul>
 <ul class="navbar-nav">
 <li class="nav-item"><form class="form-inline" role="search">
@@ -50,12 +51,13 @@
 </h1></div>
 <!-- badges: start -->
 
-<p><strong>wesandersoncast</strong> is a lightweight R package that provides a tidy dataset of actors appearing in films directed by <strong>Wes Anderson</strong>. It includes each film’s title, release year, runtime, and worldwide box office takings — all sourced from <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">Wikidata</a>.</p>
+<!-- badges: end -->
+<p><strong>wesandersoncast</strong> (v0.1.0.9001) is a lightweight R package that provides a tidy dataset of actors appearing in films directed by <strong>Wes Anderson</strong>. It includes each film’s title, release year, runtime, and worldwide box office takings — all sourced from <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">Wikidata</a>.</p>
 <p>The dataset is ideal for demonstrations, tutorials, and exploration of network relationships or filmography trends using the tidyverse.</p>
 <div class="section level2">
 <h2 id="id_-dataset-contents">📦 Dataset contents<a class="anchor" aria-label="anchor" href="#id_-dataset-contents"></a>
 </h2>
-<p>The <code>wes_actors</code> dataset is a tibble with 353 rows and 5 variables:</p>
+<p>The <code>wes_actors</code> dataset is a tibble with 385 rows and 5 variables:</p>
 <table class="table">
 <colgroup>
 <col width="33%">
@@ -81,7 +83,7 @@
 <tr class="odd">
 <td><code>release_date</code></td>
 <td>date</td>
-<td>Official release date of the film</td>
+<td>First screening date of the film</td>
 </tr>
 <tr class="even">
 <td><code>box_office_usd</code></td>
@@ -100,9 +102,12 @@
 <h2 id="id_-data-notes">📝 Data Notes<a class="anchor" aria-label="anchor" href="#id_-data-notes"></a>
 </h2>
 <ul>
-<li>“Castello Cavalcanti”, “Cousin Ben Troop Screening with Jason Schwartzman”, “Hotel Chevalier”, and the short version of “Bottle Rocket” are not included.</li>
-<li>“The Wonderful Story of Henry Sugar”, “The Rat Catcher”, and “The Swan” have no box office results as they were produced by Netflix.</li>
-<li>“The Phoenician Scheme” was released in May 2025. At the time of publishing to CRAN, no box office figures were available. This will be updated once the data is released.</li>
+<li>
+<em>Castello Cavalcanti</em>, <em>Cousin Ben Troop Screening with Jason Schwartzman</em>, <em>Hotel Chevalier</em>, and the short film versions of <em>Bottle Rocket</em> are not included.</li>
+<li>
+<em>The Wonderful Story of Henry Sugar</em>, <em>The Rat Catcher</em>, <em>Poison</em> and <em>The Swan</em> have no box office results as they were produced by Netflix.</li>
+<li>
+<em>The Phoenician Scheme</em> was released in May 2025. At the time of publishing to CRAN, no box office figures were available. This will be updated once the data is released.</li>
 </ul>
 <p>If you find any errors in the data, I encourage you to correct them on Wikidata — it’s an incredible community-driven resource.</p>
 </div>
@@ -110,7 +115,7 @@
 <h2 id="id_-license">📜 License<a class="anchor" aria-label="anchor" href="#id_-license"></a>
 </h2>
 <p>The dataset included in this package is dedicated to the public domain under <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="external-link">CC0 1.0</a>.</p>
-<p>(We love creative commons)</p>
+<p>(❤️ creative commons ❤️)</p>
 </div>
 <div class="section level2">
 <h2 id="id_-installation">📥 Installation<a class="anchor" aria-label="anchor" href="#id_-installation"></a>
@@ -119,14 +124,11 @@
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("remotes") # if not already installed</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"KellyTall/wesandersoncast"</span><span class="op">)</span></span></code></pre></div>
-<p>Or install it from local source (if not yet on CRAN):</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="id_-example">🔍 Example<a class="anchor" aria-label="anchor" href="#id_-example"></a>
 </h2>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.hellomister.com.au/wesandersoncast/" class="external-link">wesandersoncast</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">wes_actors</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 6 × 5</span></span>
@@ -139,6 +141,30 @@
 <span><span class="co">#&gt; 4 Asteroid City Aimee Mullins        2023-05-23         53857743 1H 45M 0S      </span></span>
 <span><span class="co">#&gt; 5 Asteroid City Ainhoa Aldanondo     2023-05-23         53857743 1H 45M 0S      </span></span>
 <span><span class="co">#&gt; 6 Asteroid City Alejandro García Ap… 2023-05-23         53857743 1H 45M 0S</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="id_-version">📦 Version<a class="anchor" aria-label="anchor" href="#id_-version"></a>
+</h2>
+<ul>
+<li>Current version: <strong>0.1.0.9001</strong>
+</li>
+<li>Last updated: <strong>31 May 2025</strong>
+</li>
+</ul>
+</div>
+<div class="section level2">
+<h2 id="id_-data-updates">📅 Data Updates<a class="anchor" aria-label="anchor" href="#id_-data-updates"></a>
+</h2>
+<ul>
+<li>Last updated: 31 May 2025</li>
+<li>Total records: 385</li>
+<li>Source: <a href="%5Bhttps://www.wikidata.org" class="external-link">Wikidata</a>(<a href="https://www.wikidata.org" class="external-link uri">https://www.wikidata.org</a>)</li>
+</ul>
+</div>
+<div class="section level2">
+<h2 id="id_-whats-new-in-this-version">✨ What’s new in this version<a class="anchor" aria-label="anchor" href="#id_-whats-new-in-this-version"></a>
+</h2>
+<p>Included voice actors (P725) in addition to screen actors which means <em>Isle of Dogs</em> and <em>Fantastic Mr Fox</em> now appear.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
