@@ -8,5 +8,4 @@ Initial CRAN release with:
 # wesandersoncast 0.1.0.9001
 
 - Added voice actors (P725) alongside actors (P161)
-- IMDb ID field added
-- Minor data cleanup and formatting improvements
+
