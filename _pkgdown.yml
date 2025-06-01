@@ -1,4 +1,7 @@
 url: http://www.hellomister.com.au/wesandersoncast/
 template:
   bootstrap: 5
+news:
+  one_page: true
+
 
