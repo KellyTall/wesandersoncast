@@ -38,6 +38,7 @@ jobs:
           extra-packages: |
             any::pkgdown
             any::devtools
+            any::wesanderson
             local::.
           needs: website
 
