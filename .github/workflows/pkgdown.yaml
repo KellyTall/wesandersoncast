@@ -33,23 +33,23 @@ jobs:
         with:
           use-public-rspm: true
 
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          extra-packages: |
-            any::pkgdown
-            any::devtools
-            any::wesanderson
-            any::ggplot2
-            any::dplyr
-            any::forcats
-            any::usethis
-            any::httr2
-            any::ragg
-            any::rcmdcheck
-            any::rversions
-            any::urlchecker
-            local::.
-          needs: website
+     - uses: r-lib/actions/setup-r-dependencies@v2
+  with:
+    extra-packages: |
+      any::pkgdown
+      any::devtools
+      any::usethis
+      any::httr2
+      any::ragg
+      any::rcmdcheck
+      any::rversions
+      any::urlchecker
+      any::wesanderson
+      any::ggplot2
+      any::dplyr
+      any::forcats
+      local::.
+    needs: website
 
       - name: Build site
         run: pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)
